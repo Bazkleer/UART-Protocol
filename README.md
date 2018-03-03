@@ -1,15 +1,15 @@
-UART Protocol
-================
+UART communication Protocol
+=================
 
 Introduction
 ------------
-Universal asynchronous receiver-transmitter (UART) implementation and testing on Atmega32 with the AVR toolchain.
+Universal asynchronous receiver-transmitter (UART) implementation and testing it with some simple proteus simulation on Atmega32 with the AVR toolchain.
 
 Hardware
 --------
 * USB Type A to Type B cable
 * AVR ATmega32 microcontroller.
-*
+
 
 Circuit
 --------

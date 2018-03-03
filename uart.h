@@ -39,7 +39,7 @@ void uart_transmit(uint8_t data);
 
 
 /*********************************************************************
-* Function    : uart_read(void);
+* Function    : uart_receive(void);
 *
 * DESCRIPTION : recieve data
 *
@@ -47,7 +47,7 @@ void uart_transmit(uint8_t data);
 *
 * Return Value: UDR value (UART Data Register)
 ***********************************************************************/
-uint8_t uart_read(void);
+uint8_t uart_receive(void);
 
 
 
@@ -60,7 +60,7 @@ uint8_t uart_read(void);
 *
 * Return Value: Nothing
 ***********************************************************************/
-void UART_Transmit_string (char * str);
+void uart_transmit_string (char * str);
 
 
 #endif
