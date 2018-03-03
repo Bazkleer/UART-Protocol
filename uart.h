@@ -7,4 +7,60 @@
 
 
 
+#define  FOSC        8000000// Clock Speed
+#define  BAUD        9600
+#define  BAUDRATE    ((FOSC)/(BAUD*16UL)-1)
+
+
+/*********************************************************************
+* Function    : uart_init();
+*
+* DESCRIPTION : initialize the UART
+*
+* PARAMETERS  : none
+*
+* Return Value: Nothing
+***********************************************************************/
+void uart_init();
+
+
+
+/*********************************************************************
+* Function    : uart_transmit(uint8_t data);
+*
+* DESCRIPTION : transmit data
+*
+* PARAMETERS  : uint8_t data
+*
+* Return Value: Nothing
+***********************************************************************/
+void uart_transmit(uint8_t data);
+
+
+
+/*********************************************************************
+* Function    : uart_read(void);
+*
+* DESCRIPTION : recieve data
+*
+* PARAMETERS  : none
+*
+* Return Value: UDR value (UART Data Register)
+***********************************************************************/
+uint8_t uart_read(void);
+
+
+
+/*********************************************************************
+* Function    : uart_transmit_string (char * str);
+*
+* DESCRIPTION : transmit each cahracter of the string
+*
+* PARAMETERS  : char * str
+*
+* Return Value: Nothing
+***********************************************************************/
+void UART_Transmit_string (char * str);
+
+
 #endif
