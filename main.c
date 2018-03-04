@@ -12,7 +12,7 @@
    uart_transmit_string("2- LED OFF");
    uart_transmit(13);
    uart_transmit_string("3- Print \"Blah Blah\"");
-   
+
    while(1){
      uart_transmit(13);
      temp_data=uart_receive();
@@ -21,7 +21,7 @@
      if(temp_data=='1'){
        PORTA|=(1<<0)|(1<<1);
      }
-     else if(temp_data=='0'){
+     else if(temp_data=='2'){
        PORTA&=~((1<<0)|(1<<1));
      }
      else if(temp_data=='3'){
